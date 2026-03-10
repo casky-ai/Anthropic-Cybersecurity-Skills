@@ -1,19 +1,19 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-03-10T23:44:50Z",
+  "generated_at": "2026-03-10T23:47:16Z",
   "repository": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-  "total_skills": 683,
+  "total_skills": 693,
   "total_domains": 1,
-  "total_subdomains": 29,
+  "total_subdomains": 30,
   "domain_stats": {
-    "cybersecurity": 683
+    "cybersecurity": 693
   },
   "subdomain_stats": {
     "digital-forensics": 36,
+    "malware-analysis": 38,
     "security-operations": 34,
     "threat-intelligence": 48,
-    "malware-analysis": 37,
-    "cloud-security": 53,
+    "cloud-security": 56,
     "soc-operations": 33,
     "mobile-security": 12,
     "container-security": 29,
@@ -24,20 +24,21 @@
     "devsecops": 16,
     "identity-access-management": 34,
     "vulnerability-management": 25,
-    "threat-hunting": 43,
+    "threat-hunting": 45,
     "web-application-security": 42,
     "penetration-testing": 23,
     "zero-trust-architecture": 13,
-    "cryptography": 13,
+    "cryptography": 14,
     "endpoint-security": 16,
     "ot-ics-security": 28,
     "api-security": 28,
     "threat-detection": 4,
     "ransomware-defense": 5,
+    "deception-technology": 2,
     "application-security": 2,
     "compliance-governance": 5,
-    "deception-technology": 1,
-    "red-team": 1
+    "identity-and-access-management": 1,
+    "red-team": 2
   },
   "top_tags": [
     {
@@ -46,7 +47,7 @@
     },
     {
       "tag": "threat-hunting",
-      "count": 52
+      "count": 54
     },
     {
       "tag": "penetration-testing",
@@ -58,7 +59,7 @@
     },
     {
       "tag": "cloud-security",
-      "count": 39
+      "count": 41
     },
     {
       "tag": "owasp",
@@ -97,6 +98,10 @@
       "count": 28
     },
     {
+      "tag": "red-team",
+      "count": 25
+    },
+    {
       "tag": "proactive-detection",
       "count": 25
     },
@@ -113,11 +118,7 @@
       "count": 24
     },
     {
-      "tag": "red-team",
-      "count": 24
-    },
-    {
-      "tag": "scada",
+      "tag": "zero-trust",
       "count": 23
     }
   ],
@@ -139,6 +140,26 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/acquiring-disk-image-with-dd-and-dcfldd"
+    },
+    {
+      "name": "analyzing-android-malware-with-apktool",
+      "description": "Perform static analysis of Android APK malware samples using apktool for decompilation, jadx for Java source recovery, and androguard for permission analysis, manifest inspection, and suspicious API call detection.",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [
+        "Android",
+        "APK",
+        "apktool",
+        "jadx",
+        "androguard",
+        "mobile-malware",
+        "static-analysis",
+        "reverse-engineering"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/analyzing-android-malware-with-apktool"
     },
     {
       "name": "analyzing-api-gateway-access-logs",
@@ -861,6 +882,25 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/analyzing-network-traffic-with-wireshark"
+    },
+    {
+      "name": "analyzing-office365-audit-logs-for-compromise",
+      "description": "Parse Office 365 Unified Audit Logs via Microsoft Graph API to detect email forwarding rule creation, inbox delegation, suspicious OAuth app grants, and other indicators of account compromise.",
+      "domain": "cybersecurity",
+      "subdomain": "cloud-security",
+      "tags": [
+        "Office365",
+        "Microsoft-Graph",
+        "audit-logs",
+        "email-compromise",
+        "inbox-rules",
+        "OAuth",
+        "BEC"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/analyzing-office365-audit-logs-for-compromise"
     },
     {
       "name": "analyzing-outlook-pst-for-email-forensics",
@@ -4274,6 +4314,25 @@
       "path": "skills/detecting-shadow-api-endpoints"
     },
     {
+      "name": "detecting-shadow-it-cloud-usage",
+      "description": "Detect unauthorized SaaS and cloud service usage (shadow IT) by analyzing proxy logs, DNS query logs, and netflow data using Python pandas for traffic pattern analysis and domain classification.",
+      "domain": "cybersecurity",
+      "subdomain": "cloud-security",
+      "tags": [
+        "shadow-IT",
+        "SaaS-discovery",
+        "proxy-logs",
+        "DNS-analysis",
+        "netflow",
+        "cloud-security",
+        "pandas"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/detecting-shadow-it-cloud-usage"
+    },
+    {
       "name": "detecting-spearphishing-with-email-gateway",
       "description": "Spearphishing targets specific individuals using personalized, researched content that bypasses generic spam filters. Email security gateways (SEGs) like Microsoft Defender for Office 365, Proofpoint,",
       "domain": "cybersecurity",
@@ -4343,6 +4402,25 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/detecting-supply-chain-attacks-in-ci-cd"
+    },
+    {
+      "name": "detecting-suspicious-oauth-application-consent",
+      "description": "Detect risky OAuth application consent grants in Azure AD / Microsoft Entra ID using Microsoft Graph API, audit logs, and permission analysis to identify illicit consent grant attacks.",
+      "domain": "cybersecurity",
+      "subdomain": "cloud-security",
+      "tags": [
+        "OAuth",
+        "Azure-AD",
+        "Entra-ID",
+        "Microsoft-Graph",
+        "illicit-consent",
+        "cloud-security",
+        "application-permissions"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/detecting-suspicious-oauth-application-consent"
     },
     {
       "name": "detecting-suspicious-powershell-execution",
@@ -5709,6 +5787,25 @@
       "path": "skills/hunting-for-spearphishing-indicators"
     },
     {
+      "name": "hunting-for-startup-folder-persistence",
+      "description": "Detect T1547.001 startup folder persistence by monitoring Windows startup directories for suspicious file creation, analyzing autoruns entries, and using Python watchdog for real-time filesystem monitoring.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "T1547.001",
+        "startup-folder",
+        "persistence",
+        "autoruns",
+        "watchdog",
+        "filesystem-monitoring"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/hunting-for-startup-folder-persistence"
+    },
+    {
       "name": "hunting-for-supply-chain-compromise",
       "description": "Hunt for supply chain compromise indicators including trojanized software updates, compromised dependencies, unauthorized code modifications, and tampered build artifacts.",
       "domain": "cybersecurity",
@@ -5779,6 +5876,25 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/hunting-for-unusual-network-connections"
+    },
+    {
+      "name": "hunting-for-unusual-service-installations",
+      "description": "Detect suspicious Windows service installations (MITRE ATT&CK T1543.003) by parsing System event logs for Event ID 7045, analyzing service binary paths, and identifying indicators of persistence mechanisms.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "T1543.003",
+        "service-installation",
+        "persistence",
+        "Event-7045",
+        "Sysmon",
+        "Windows-services"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/hunting-for-unusual-service-installations"
     },
     {
       "name": "hunting-for-webshell-activity",
@@ -6529,6 +6645,25 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/implementing-ddos-mitigation-with-cloudflare"
+    },
+    {
+      "name": "implementing-deception-based-detection-with-canarytoken",
+      "description": "Deploy and monitor Canary Tokens via the Thinkst Canary API for deception-based breach detection using web bug tokens, DNS tokens, document tokens, and AWS key tokens.",
+      "domain": "cybersecurity",
+      "subdomain": "deception-technology",
+      "tags": [
+        "canarytoken",
+        "deception",
+        "honeytokens",
+        "breach-detection",
+        "Thinkst-Canary",
+        "tripwire",
+        "early-warning"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-deception-based-detection-with-canarytoken"
     },
     {
       "name": "implementing-delinea-secret-server-for-pam",
@@ -7777,6 +7912,25 @@
       "path": "skills/implementing-privileged-access-management-with-cyberark"
     },
     {
+      "name": "implementing-privileged-access-workstation",
+      "description": "Design and implement Privileged Access Workstations (PAWs) with device hardening, just-in-time access, and integration with CyberArk or BeyondTrust for secure administrative operations.",
+      "domain": "cybersecurity",
+      "subdomain": "identity-and-access-management",
+      "tags": [
+        "privileged-access",
+        "PAW",
+        "zero-trust",
+        "device-hardening",
+        "CyberArk",
+        "BeyondTrust",
+        "just-in-time-access"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-privileged-access-workstation"
+    },
+    {
       "name": "implementing-privileged-session-monitoring",
       "description": ">",
       "domain": "cybersecurity",
@@ -8822,6 +8976,25 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/performing-active-directory-compromise-investigation"
+    },
+    {
+      "name": "performing-active-directory-forest-trust-attack",
+      "description": "Enumerate and audit Active Directory forest trust relationships using impacket for SID filtering analysis, trust key extraction, cross-forest SID history abuse detection, and inter-realm Kerberos ticket assessment.",
+      "domain": "cybersecurity",
+      "subdomain": "red-team",
+      "tags": [
+        "active-directory",
+        "forest-trust",
+        "impacket",
+        "SID-filtering",
+        "kerberos",
+        "red-team",
+        "trust-enumeration"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/performing-active-directory-forest-trust-attack"
     },
     {
       "name": "performing-active-directory-penetration-test",
@@ -9892,6 +10065,25 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/performing-graphql-security-assessment"
+    },
+    {
+      "name": "performing-hardware-security-module-integration",
+      "description": "Integrate Hardware Security Modules (HSMs) using PKCS#11 interface for cryptographic key management, signing operations, and secure key storage with python-pkcs11, AWS CloudHSM, and YubiHSM2.",
+      "domain": "cybersecurity",
+      "subdomain": "cryptography",
+      "tags": [
+        "HSM",
+        "PKCS11",
+        "CloudHSM",
+        "YubiHSM2",
+        "key-management",
+        "cryptographic-operations",
+        "hardware-security"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/performing-hardware-security-module-integration"
     },
     {
       "name": "performing-hash-cracking-with-hashcat",
